@@ -15,6 +15,8 @@ return {
             ["<leader>g"] = { name = "+git" }, -- Lazygit
             ["<leader>h"] = { name = "+harpoon" }, -- Harpoon
             ["<leader>x"] = { name = "+diagnostics" }, -- Trouble
+            ["<leader>x"] = { name = "+lazy" }, -- Lazy
+            ["<leader>x"] = { name = "+quitting" }, -- Quitting
         },
     },
     config = function(_, opts)

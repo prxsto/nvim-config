@@ -8,7 +8,7 @@ return {
     },
     cmd = { "Neotree" },
     keys = {
-        { "<leader>ee", ":Neotree toggle<CR>", desc = "Toggle file explorer", silent = true },
+        { "<leader>ee", "<cmd>Neotree toggle<CR>", desc = "toggle file explorer", silent = true },
     },
     config = function()
         require("neo-tree").setup({
