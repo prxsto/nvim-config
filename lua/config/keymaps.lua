@@ -24,4 +24,4 @@ keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "increase w
 keymap.set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "lazy" })
 
 -- quit
-keymap.set("n", "<leader>qq", ":qa<cr>", { desc = "Quit all" })
+keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "quit all" })

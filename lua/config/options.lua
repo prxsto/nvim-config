@@ -1,5 +1,7 @@
 local opt = vim.opt -- for conciseness
 
+opt.laststatus = 3 -- fix for lualine
+
 -- enable line number and relative line number
 opt.number = true
 opt.relativenumber = true

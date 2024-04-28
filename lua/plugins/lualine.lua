@@ -16,7 +16,7 @@ return {
                 section_separators = { left = " ", right = " " },
                 theme = cyberdream,
                 globalstatus = true,
-                disabled_filetypes = { statusline = { "dashboard", "alpha" } },
+                disabled_filetypes = { statusline = { "dashboard", "alpha", "neotree" } },
             },
             sections = {
                 lualine_a = { { "mode", icon = "" } },
@@ -83,7 +83,7 @@ return {
                 },
                 lualine_z = {
                     function()
-                        return "  " .. os.date("%X") .. " 🚀 "
+                        return "  " .. os.date("%X")
                     end,
                 },
             },
