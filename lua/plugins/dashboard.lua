@@ -32,6 +32,7 @@ theme = 'hyper',
         },
       },
     },
+    vim.keymap.set("n", "<leader>qd", "<cmd>Dashboard<CR> <BAR> <cmd>Neotree toggle<CR>", { desc = "show dashboard" })
     }
   end,
   dependencies = { {'nvim-tree/nvim-web-devicons'}}
