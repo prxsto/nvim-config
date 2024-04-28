@@ -21,7 +21,7 @@ keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "decrease wi
 keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "increase window width" })
 
 -- lazy
-keymap.set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "lazy" })
+keymap.set("n", "<leader>ul", "<cmd>Lazy<cr>", { desc = "show lazy modal" })
 
 -- quit
 keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "quit all" })
