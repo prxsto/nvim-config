@@ -4,7 +4,7 @@ local keymap = vim.keymap -- for conciseness
 
 -- writing to files
 keymap.set("n", "<Leader>ww", "<cmd>write<CR>", { noremap = true, silent = true, desc = "write current buffer" })
-keymap.set("n", "<leader>wa", "<cmd>write all<cr>", { noremap = true, silent = true, desc = "write all buffers" })
+keymap.set("n", "<leader>wa", "<cmd>writeall<cr>", { noremap = true, silent = true, desc = "write all buffers" })
 
 -- map leader+y to copy to system clipboard in normal and visual mode
 keymap.set({ "n", "v" }, "<Leader>y", '"+y', { noremap = true, silent = true, desc = "copy to clipboard" })
