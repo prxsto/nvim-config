@@ -35,9 +35,9 @@ return {
 			},
 			vim.keymap.set(
 				"n",
-				"<leader>ud",
+				"<leader>dd",
 				"<cmd>Dashboard<CR> <BAR> <cmd>Neotree toggle<CR>",
-				{ desc = "show dashboard" }
+				{ desc = "dashboard" }
 			),
 		})
 	end,

@@ -4,7 +4,7 @@ local keymap = vim.keymap -- for conciseness
 
 -- writing to files
 keymap.set("n", "<Leader>ww", "<cmd>write<CR>", { noremap = true, silent = true, desc = "write current buffer" })
-keymap.set("n", "<leader>wa", "<cmd>writeall<cr>", { noremap = true, silent = true, desc = "write all buffers" })
+keymap.set("n", "<leader>wa", "<cmd>wall<cr>", { noremap = true, silent = true, desc = "write all buffers" })
 
 -- map leader+y to copy to system clipboard in normal and visual mode
 keymap.set({ "n", "v" }, "<Leader>y", '"+y', { noremap = true, silent = true, desc = "copy to clipboard" })
@@ -28,7 +28,7 @@ keymap.set("n", "<C-Left>", "<cmd>vertical resize -2<cr>", { desc = "decrease wi
 keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "increase window width" })
 
 -- lazy
-keymap.set("n", "<leader>ul", "<cmd>Lazy<cr>", { desc = "show lazy modal" })
+keymap.set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "lazy" })
 
 -- copilot
 keymap.set("n", "<leader>cd", "<cmd>Copilot disable<CR>", { desc = "disable copilot" })

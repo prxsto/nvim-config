@@ -20,7 +20,7 @@ return {
 			desc = "find session",
 			noremap = true,
 		})
-		keymap.set("n", "<leader>wr", "<cmd>SessionRestore<CR>", { desc = "Restore worksession for cwd" }) -- restore last workspace session for current directory
-		keymap.set("n", "<leader>ws", "<cmd>SessionSave<CR>", { desc = "Save worksession for auto session root dir" }) -- save workspace session for current working directory
+		keymap.set("n", "<leader>wr", "<cmd>SessionRestore<CR>", { desc = "restore worksession for cwd" }) -- restore last workspace session for current directory
+		keymap.set("n", "<leader>ws", "<cmd>SessionSave<CR>", { desc = "save worksession for auto session root dir" }) -- save workspace session for current working directory
 	end,
 }

@@ -5,7 +5,7 @@ return {
 		config = function()
 			require("mason").setup()
 			local keymap = vim.keymap -- for conciseness
-			keymap.set("n", "<leader>um", "<cmd>Mason<CR>", { desc = "show mason modal" })
+			keymap.set("n", "<leader>mm", "<cmd>Mason<CR>", { desc = "mason" })
 		end,
 	},
 	{
@@ -44,8 +44,9 @@ return {
 
 			local keymap = vim.keymap -- for conciseness
 			keymap.set("n", "K", vim.lsp.buf.hover, { desc = "show hover info" })
-			keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "go to definition" })
-			keymap.set("n", "gr", vim.lsp.buf.references, { desc = "go to references" })
+			keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "go to definition" })
+			keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "go to references" })
+			keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "rename symbol" })
 			keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "show code actions" })
 		end,
 	},
