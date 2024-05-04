@@ -30,11 +30,6 @@ keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "increase w
 -- lazy
 keymap.set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "lazy" })
 
--- copilot
-keymap.set("n", "<leader>cd", "<cmd>Copilot disable<CR>", { desc = "disable copilot" })
-keymap.set("n", "<leader>ce", "<cmd>Copilot enable<CR>", { desc = "enable copilot" })
-keymap.set("n", "<leader>ct", "<cmd>Copilot toggle<CR>", { desc = "toggle copilot" })
-
 -- quit
 keymap.set("n", "<leader>qc", "<cmd>bd<cr>", { desc = "quit current buffer" })
 keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "quit all" })
