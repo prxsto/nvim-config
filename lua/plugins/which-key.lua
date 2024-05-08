@@ -17,6 +17,12 @@ return {
 			["<leader>q"] = { name = "+quitting" }, -- Quitting
 			["<leader>w"] = { name = "+worksession" }, -- Autosession
 			["<leader>s"] = { name = "+split" }, -- Splits
+			["<leader>m"] = { name = "+mason" }, -- Mason
+			["<leader>l"] = { name = "+lazy" }, -- Lazy
+			["<leader>n"] = { desc = "which_key_ignore" },
+			["<leader>d"] = { name = "+dashboard" }, -- Dashboard
+			["<leader>g"] = { name = "+goto" }, -- Go to
+			["<leader>r"] = { name = "+rename" }, -- Rename
 		},
 	},
 	config = function(_, opts)

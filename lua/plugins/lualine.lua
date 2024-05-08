@@ -2,9 +2,13 @@ return {
 	"nvim-lualine/lualine.nvim",
 	event = "VeryLazy",
 	opts = function()
+		local colors = require("cyberdream.colors").default
+		local cyberdream = require("lualine.themes.cyberdream")
 		return {
 			options = {
-				theme = "catppuccin",
+				component_separators = { left = " ", right = " " },
+				section_separators = { left = " ", right = " " },
+				theme = cyberdream,
 				globalstatus = true,
 				disabled_filetypes = { statusline = { "dashboard", "alpha", "neotree" } },
 			},
@@ -26,23 +30,22 @@ return {
 						"filename",
 						symbols = { modified = "  ", readonly = "", unnamed = "" },
 					},
-					-- {
-					-- 	function()
-					-- 		return require("nvim-navic").get_location()
-					-- 	end,
-					-- 	cond = function()
-					-- 		return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
-					-- 	end,
-					-- 	color = { fg = colors.grey, bg = colors.none },
-					-- },
+					{
+						function()
+							return require("nvim-navic").get_location()
+						end,
+						cond = function()
+							return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
+						end,
+						color = { fg = colors.grey, bg = colors.none },
+					},
 				},
 				lualine_x = {
 					{
 						require("lazy.status").updates,
 						cond = require("lazy.status").has_updates,
-						-- color = { fg = colors.green },
+						color = { fg = colors.green },
 					},
-					{ "diff" },
 				},
 				lualine_y = {
 					{
@@ -50,7 +53,7 @@ return {
 					},
 					{
 						"location",
-						-- color = { fg = colors.cyan, bg = colors.none },
+						color = { fg = colors.cyan, bg = colors.none },
 					},
 				},
 				lualine_z = {
@@ -60,7 +63,7 @@ return {
 				},
 			},
 
-			extensions = { "aerial", "lazy", "mason", "neo-tree", "trouble" },
+			extensions = { "aerial", "lazy", "toggleterm", "mason", "neo-tree", "trouble" },
 		}
 	end,
 }

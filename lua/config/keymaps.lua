@@ -9,6 +9,9 @@ keymap.set("n", "<leader>wa", "<cmd>wall<cr>", { noremap = true, silent = true, 
 -- map leader+y to copy to system clipboard in normal and visual mode
 keymap.set({ "n", "v" }, "<Leader>y", '"+y', { noremap = true, silent = true, desc = "copy to clipboard" })
 
+-- remove highlight
+keymap.set("n", "<leader>nh", "<cmd>nohl<cr>", { noremap = true, silent = true, desc = "remove highlights" })
+
 -- window management
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "split window vertically" }) -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "split window horizontally" }) -- split window horizontally
