@@ -10,10 +10,7 @@ return {
 	},
 	{
 		"williamboman/mason-lspconfig.nvim",
-		lazy = false,
-		opts = {
-			auto_install = true,
-		},
+		auto_install = true,
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
@@ -23,6 +20,7 @@ return {
 					"tailwindcss",
 					"jsonls",
 					"html",
+					"emmet_language_server",
 				},
 			})
 		end,
@@ -34,12 +32,14 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			local lspconfig = require("lspconfig")
+
 			lspconfig.lua_ls.setup({ capabilities = capabilities })
 			lspconfig.tsserver.setup({ capabilities = capabilities })
 			lspconfig.cssls.setup({ capabilities = capabilities })
 			lspconfig.tailwindcss.setup({ capabilities = capabilities })
 			lspconfig.jsonls.setup({ capabilities = capabilities })
 			lspconfig.html.setup({ capabilities = capabilities })
+			lspconfig.emmet_language_server.setup({ capabilities = capabilities })
 			---@diagnostic disable-next-line: trailing-space
 
 			local keymap = vim.keymap -- for conciseness

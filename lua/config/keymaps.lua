@@ -33,6 +33,9 @@ keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "increase w
 -- lazy
 keymap.set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "lazy" })
 
+-- bufferline
+keymap.set("n", "<leader>gb", "<cmd>BufferLinePick<CR>", { desc = "go to buffer", noremap = true, silent = true })
+
 -- quit
 keymap.set("n", "<leader>qc", "<cmd>bd<cr>", { desc = "quit current buffer" })
 keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "quit all" })

@@ -1,21 +1,17 @@
 return {
-	{
-		"scottmckendry/cyberdream.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("cyberdream").setup({
-				-- Recommended - see "Configuring" below for more config options
-				transparent = true,
-				italic_comments = true,
-				hide_fillchars = false,
-				borderless_telescope = false,
-				terminal_colors = true,
-			})
-			vim.cmd("colorscheme cyberdream") -- set the colorscheme
-		end,
-	},
-	{
-		"hiphish/rainbow-delimiters.nvim",
-	},
+	"prxsto/poimandres.nvim",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require("poimandres").setup({
+			bold_vert_split = false, -- use bold vertical separators
+			dim_nc_background = false, -- dim 'non-current' window backgrounds
+			disable_background = true, -- disable background
+			disable_float_background = true, -- disable background for floats
+			disable_italics = false, -- disable italics
+		})
+	end,
+	init = function()
+		vim.cmd("colorscheme poimandres")
+	end,
 }

@@ -15,7 +15,7 @@ return {
 			["<leader>h"] = { name = "+harpoon" }, -- Harpoon
 			["<leader>x"] = { name = "+diagnostics" }, -- Trouble
 			["<leader>q"] = { name = "+quitting" }, -- Quitting
-			["<leader>w"] = { name = "+worksession" }, -- Autosession
+			["<leader>w"] = { name = "+worksessions/write" }, -- Autosession
 			["<leader>s"] = { name = "+split" }, -- Splits
 			["<leader>m"] = { name = "+mason" }, -- Mason
 			["<leader>l"] = { name = "+lazy" }, -- Lazy

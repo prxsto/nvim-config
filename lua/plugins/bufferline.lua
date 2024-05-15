@@ -1,4 +1,4 @@
-return {
+jeturn({
 	"akinsho/bufferline.nvim",
 	event = "VeryLazy",
 	keys = {
@@ -7,17 +7,19 @@ return {
 	},
 	opts = {
 		options = {
-			indicator = { style = "none" },
-			buffer_close_icon = "",
-			separator_style = { "", "" },
+			indicator = { style = "underline" },
+			buffer_close_icon = "󰅖",
+			separator_style = "slope",
+			themable = true,
 			always_show_bufferline = true,
 			offsets = {
 				{
 					filetype = "neo-tree",
 					text = "EXPLORER",
-					text_align = "center",
+					text_align = "left",
+					separator = true,
 				},
 			},
 		},
 	},
-}
+})

@@ -2,13 +2,13 @@ return {
 	"nvim-lualine/lualine.nvim",
 	event = "VeryLazy",
 	opts = function()
-		local colors = require("cyberdream.colors").default
-		local cyberdream = require("lualine.themes.cyberdream")
+		-- local colors = require("catppuccin.palettes").get_palette("mocha")
+		-- local cyberdream = require("lualine.themes.cyberdream")
 		return {
 			options = {
-				component_separators = { left = " ", right = " " },
-				section_separators = { left = " ", right = " " },
-				theme = cyberdream,
+				-- component_separators = { left = " ", right = " " },
+				-- section_separators = { left = " ", right = " " },
+				theme = "auto",
 				globalstatus = true,
 				disabled_filetypes = { statusline = { "dashboard", "alpha", "neotree" } },
 			},
@@ -16,6 +16,7 @@ return {
 				lualine_a = { { "mode", icon = "" } },
 				lualine_b = { { "branch", icon = "" } },
 				lualine_c = {
+					-- color = { bg = "303340" },
 					{
 						"diagnostics",
 						symbols = {
@@ -37,14 +38,14 @@ return {
 						cond = function()
 							return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
 						end,
-						color = { fg = colors.grey, bg = colors.none },
+						-- color = { bg = "303340" },
 					},
 				},
 				lualine_x = {
 					{
 						require("lazy.status").updates,
 						cond = require("lazy.status").has_updates,
-						color = { fg = colors.green },
+						-- color = { fg = colors.green },
 					},
 				},
 				lualine_y = {
@@ -53,7 +54,7 @@ return {
 					},
 					{
 						"location",
-						color = { fg = colors.cyan, bg = colors.none },
+						-- color = { fg = colors.cyan, bg = colors.none },
 					},
 				},
 				lualine_z = {
