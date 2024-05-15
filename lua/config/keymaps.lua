@@ -33,9 +33,13 @@ keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<cr>", { desc = "increase w
 -- lazy
 keymap.set("n", "<leader>ll", "<cmd>Lazy<cr>", { desc = "lazy" })
 
--- bufferline
-keymap.set("n", "<leader>gb", "<cmd>BufferLinePick<CR>", { desc = "go to buffer", noremap = true, silent = true })
+-- buffers
+keymap.set("n", "<leader>bg", "<cmd>BufferLinePick<CR>", { desc = "go to buffer", noremap = true, silent = true })
+keymap.set("n", "<leader>bq", "<cmd>bd<cr>", { desc = "quit current buffer" })
+
+-- precognition
+-- keymap.set("n", "<leader>pt", "<cmd>precognition.toggle()<cr>", { desc = "toggle precognition", silent = true })
+-- keymap.set("n", "<leader>pp", "<cmd>precognition.peek()<cr>", { desc = "precognition peek", silent = true })
 
 -- quit
-keymap.set("n", "<leader>qc", "<cmd>bd<cr>", { desc = "quit current buffer" })
 keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "quit all" })

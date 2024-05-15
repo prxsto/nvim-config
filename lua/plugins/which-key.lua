@@ -23,6 +23,7 @@ return {
 			["<leader>d"] = { name = "+dashboard" }, -- Dashboard
 			["<leader>g"] = { name = "+goto" }, -- Go to
 			["<leader>r"] = { name = "+rename" }, -- Rename
+			["<leader>p"] = { name = "+precog" }, --Precognition
 		},
 	},
 	config = function(_, opts)

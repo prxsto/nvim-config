@@ -2,8 +2,6 @@ return {
 	"nvim-lualine/lualine.nvim",
 	event = "VeryLazy",
 	opts = function()
-		-- local colors = require("catppuccin.palettes").get_palette("mocha")
-		-- local cyberdream = require("lualine.themes.cyberdream")
 		return {
 			options = {
 				-- component_separators = { left = " ", right = " " },
@@ -16,7 +14,6 @@ return {
 				lualine_a = { { "mode", icon = "" } },
 				lualine_b = { { "branch", icon = "" } },
 				lualine_c = {
-					-- color = { bg = "303340" },
 					{
 						"diagnostics",
 						symbols = {
@@ -38,14 +35,12 @@ return {
 						cond = function()
 							return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
 						end,
-						-- color = { bg = "303340" },
 					},
 				},
 				lualine_x = {
 					{
 						require("lazy.status").updates,
 						cond = require("lazy.status").has_updates,
-						-- color = { fg = colors.green },
 					},
 				},
 				lualine_y = {
@@ -54,7 +49,6 @@ return {
 					},
 					{
 						"location",
-						-- color = { fg = colors.cyan, bg = colors.none },
 					},
 				},
 				lualine_z = {

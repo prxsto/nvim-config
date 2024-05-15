@@ -5,6 +5,10 @@ opt.laststatus = 3 -- fix for lualine
 -- enable line number and relative line number
 opt.number = true
 opt.relativenumber = true
+opt.signcolumn = "yes" -- always show signcolumn for extra padding
+
+-- line spacing
+opt.linespace = 10
 
 -- width of a tab
 opt.shiftwidth = 2

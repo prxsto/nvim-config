@@ -1,6 +1,6 @@
-jeturn({
+return {
 	"akinsho/bufferline.nvim",
-	event = "VeryLazy",
+	lazy = false,
 	keys = {
 		{ "<leader>bp", "<cmd>BufferLineTogglePin<CR>", desc = "toggle pin" },
 		{ "<leader>bP", "<cmd>BufferLineGroupClose ungrouped<CR>", desc = "delete non-pinned buffers" },
@@ -9,7 +9,8 @@ jeturn({
 		options = {
 			indicator = { style = "underline" },
 			buffer_close_icon = "󰅖",
-			separator_style = "slope",
+			separator_style = "thick",
+			numbers = "none",
 			themable = true,
 			always_show_bufferline = true,
 			offsets = {
@@ -22,4 +23,4 @@ jeturn({
 			},
 		},
 	},
-})
+}
