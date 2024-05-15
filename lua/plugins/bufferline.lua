@@ -8,6 +8,7 @@ return {
 	opts = {
 		options = {
 			indicator = { style = "underline" },
+			color_icons = false,
 			buffer_close_icon = "󰅖",
 			separator_style = "thick",
 			numbers = "none",
