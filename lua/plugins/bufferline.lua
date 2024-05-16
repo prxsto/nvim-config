@@ -7,13 +7,15 @@ return {
 	},
 	opts = {
 		options = {
+			mode = "tabs",
 			indicator = { style = "underline" },
-			color_icons = false,
+			color_icons = true,
 			buffer_close_icon = "󰅖",
-			separator_style = "thick",
+			separator_style = "slant",
 			numbers = "none",
 			themable = true,
 			always_show_bufferline = true,
+			diagnostics = "nvim-lsp",
 			offsets = {
 				{
 					filetype = "neo-tree",

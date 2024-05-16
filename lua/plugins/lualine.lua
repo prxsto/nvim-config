@@ -42,6 +42,7 @@ return {
 						require("lazy.status").updates,
 						cond = require("lazy.status").has_updates,
 					},
+					{ "diff" },
 				},
 				lualine_y = {
 					{

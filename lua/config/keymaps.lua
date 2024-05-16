@@ -38,8 +38,12 @@ keymap.set("n", "<leader>bg", "<cmd>BufferLinePick<CR>", { desc = "go to buffer"
 keymap.set("n", "<leader>bq", "<cmd>bd<cr>", { desc = "quit current buffer" })
 
 -- precognition
--- keymap.set("n", "<leader>pt", "<cmd>precognition.toggle()<cr>", { desc = "toggle precognition", silent = true })
--- keymap.set("n", "<leader>pp", "<cmd>precognition.peek()<cr>", { desc = "precognition peek", silent = true })
+keymap.set("n", "<leader>pt", function()
+	require("precognition").toggle()
+end, { desc = "toggle precognition", silent = true })
+keymap.set("n", "<leader>pp", function()
+	require("precognition").peek()
+end, { desc = "precognition peek", silent = true })
 
 -- quit
 keymap.set("n", "<leader>qq", "<cmd>qa<cr>", { desc = "quit all" })
