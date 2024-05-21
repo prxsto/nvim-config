@@ -8,7 +8,7 @@ return {
 				-- section_separators = { left = " ", right = " " },
 				theme = "auto",
 				globalstatus = true,
-				disabled_filetypes = { statusline = { "dashboard", "alpha", "neotree" } },
+				disabled_filetypes = { statusline = { "dashboard", "alpha", "neotree" }, winbar = {} },
 			},
 			sections = {
 				lualine_a = { { "mode", icon = "" } },

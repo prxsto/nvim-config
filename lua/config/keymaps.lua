@@ -24,6 +24,7 @@ keymap.set("n", "<C-j>", "<C-w>j", { desc = "go to lower window", remap = true }
 keymap.set("n", "<C-k>", "<C-w>k", { desc = "go to upper window", remap = true })
 keymap.set("n", "<C-l>", "<C-w>l", { desc = "go to right window", remap = true })
 
+-- TODO fix these
 -- resize window using <ctrl> arrow keys
 keymap.set("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "increase window height" })
 keymap.set("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "decrease window height" })
